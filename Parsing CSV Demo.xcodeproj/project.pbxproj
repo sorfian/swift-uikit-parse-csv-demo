@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		D6F597A329FBFFFD00F6BBDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F597A229FBFFFD00F6BBDF /* AppDelegate.swift */; };
 		D6F597A529FBFFFD00F6BBDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F597A429FBFFFD00F6BBDF /* SceneDelegate.swift */; };
-		D6F597A729FBFFFD00F6BBDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F597A629FBFFFD00F6BBDF /* ViewController.swift */; };
 		D6F597AA29FBFFFD00F6BBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F597A829FBFFFD00F6BBDF /* Main.storyboard */; };
 		D6F597AD29FBFFFD00F6BBDF /* Parsing_CSV_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6F597AB29FBFFFD00F6BBDF /* Parsing_CSV_Demo.xcdatamodeld */; };
 		D6F597AF29FBFFFE00F6BBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F597AE29FBFFFE00F6BBDF /* Assets.xcassets */; };
 		D6F597B229FBFFFE00F6BBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F597B029FBFFFE00F6BBDF /* LaunchScreen.storyboard */; };
+		D6F597BB29FC002400F6BBDF /* menudata.csv in Resources */ = {isa = PBXBuildFile; fileRef = D6F597BA29FC002400F6BBDF /* menudata.csv */; };
+		D6F597BF29FC03B700F6BBDF /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F597BE29FC03B700F6BBDF /* MenuTableViewController.swift */; };
+		D6F597C129FC03D900F6BBDF /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F597C029FC03D900F6BBDF /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6F5979F29FBFFFD00F6BBDF /* Parsing CSV Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parsing CSV Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F597A229FBFFFD00F6BBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6F597A429FBFFFD00F6BBDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6F597A629FBFFFD00F6BBDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6F597A929FBFFFD00F6BBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6F597AC29FBFFFD00F6BBDF /* Parsing_CSV_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parsing_CSV_Demo.xcdatamodel; sourceTree = "<group>"; };
 		D6F597AE29FBFFFE00F6BBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6F597B129FBFFFE00F6BBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6F597B329FBFFFE00F6BBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F597BA29FC002400F6BBDF /* menudata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menudata.csv; sourceTree = "<group>"; };
+		D6F597BE29FC03B700F6BBDF /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		D6F597C029FC03D900F6BBDF /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,26 @@
 		D6F597A129FBFFFD00F6BBDF /* Parsing CSV Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D6F597B929FC000900F6BBDF /* Import Data */,
 				D6F597A229FBFFFD00F6BBDF /* AppDelegate.swift */,
 				D6F597A429FBFFFD00F6BBDF /* SceneDelegate.swift */,
-				D6F597A629FBFFFD00F6BBDF /* ViewController.swift */,
 				D6F597A829FBFFFD00F6BBDF /* Main.storyboard */,
 				D6F597AE29FBFFFE00F6BBDF /* Assets.xcassets */,
 				D6F597B029FBFFFE00F6BBDF /* LaunchScreen.storyboard */,
 				D6F597B329FBFFFE00F6BBDF /* Info.plist */,
 				D6F597AB29FBFFFD00F6BBDF /* Parsing_CSV_Demo.xcdatamodeld */,
+				D6F597BE29FC03B700F6BBDF /* MenuTableViewController.swift */,
+				D6F597C029FC03D900F6BBDF /* MenuTableViewCell.swift */,
 			);
 			path = "Parsing CSV Demo";
+			sourceTree = "<group>";
+		};
+		D6F597B929FC000900F6BBDF /* Import Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6F597BA29FC002400F6BBDF /* menudata.csv */,
+			);
+			path = "Import Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F597B229FBFFFE00F6BBDF /* LaunchScreen.storyboard in Resources */,
+				D6F597BB29FC002400F6BBDF /* menudata.csv in Resources */,
 				D6F597AF29FBFFFE00F6BBDF /* Assets.xcassets in Resources */,
 				D6F597AA29FBFFFD00F6BBDF /* Main.storyboard in Resources */,
 			);
@@ -141,10 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F597BF29FC03B700F6BBDF /* MenuTableViewController.swift in Sources */,
 				D6F597AD29FBFFFD00F6BBDF /* Parsing_CSV_Demo.xcdatamodeld in Sources */,
-				D6F597A729FBFFFD00F6BBDF /* ViewController.swift in Sources */,
 				D6F597A329FBFFFD00F6BBDF /* AppDelegate.swift in Sources */,
 				D6F597A529FBFFFD00F6BBDF /* SceneDelegate.swift in Sources */,
+				D6F597C129FC03D900F6BBDF /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
